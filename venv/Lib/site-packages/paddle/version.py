@@ -1,0 +1,23 @@
+# THIS FILE IS GENERATED FROM PADDLEPADDLE SETUP.PY
+#
+full_version    = '1.4.1'
+major           = '1'
+minor           = '4'
+patch           = '1'
+rc              = '0'
+istaged         = True
+commit          = '3df4cbfc170a8c6db4e9a4f3dde2c74d57ceb8c0'
+with_mkl        = 'ON'
+
+def show():
+    if istaged:
+        print('full_version:', full_version)
+        print('major:', major)
+        print('minor:', minor)
+        print('patch:', patch)
+        print('rc:', rc)
+    else:
+        print('commit:', commit)
+
+def mkl():
+    return with_mkl
