@@ -6,7 +6,7 @@ import paddle # 导入paddle模块
 import paddle.fluid as fluid
 
 # 一个minibatch中有64个数据
-BATCH_SIZE = 64
+BATCH_SIZE = 32
 
 # 每次读取训练集中的500个数据并随机打乱，传入batched reader中，batched reader 每次 yield 64个数据
 train_reader = paddle.batch(
